@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Matematik Persegi</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Squator | Square Calculator</h1>
+    </header>
+    <section class="mainpage">
+        <div class="calculation-section">
+            <div class="title-bar">
+                <h1 class="title">Hitung Keliling</h1>
+            </div>
+            <div class="calculation-section-grid">
+                <div class="keliling-persegi">
+                    <img src="./keliling.png" alt="Rumus keliling persegi">
+                </div>
+                <div class="keliling-calculation">
+                    <h3>Hitung Keliling Persegi</h4>
+                    <input id="inputFieldKeliling" type="text" placeholder="Masukkan panjang sisi">
+                    <div class="button">
+                        <button id="countButtonKeliling" onClick="displayAnswerKeliling()">Hitung</button>
+                        <p id="err_msg_kel" style="display:none">Sisi harus diisi dengan angka</p>
+                    </div>
+                    <p id = "formula" style = "display:none">K = 4 x s</p>
+                    <p id = "inputValueDisplay-keliling"></p>
+                    <p id = "result-keliling"></p>
+                </div>
+            </div>
+        </div>
+        <div class="calculation-section">
+            <div class="title-bar">
+                <h1 class="title">Hitung Luas</h1>
+            </div>
+            <div class="calculation-section-grid">
+                <div class="luas-persegi">
+                    <img src="./luas.png" alt="Rumus luas persegi">
+                </div>
+                <div class="luas-calculation">
+                    <h3>Hitung Luas Persegi</h4>
+                    <input id="inputFieldLuas" type="text" placeholder="Masukkan panjang sisi">
+                    <div class="button">
+                        <button id="countButtonLuas" onClick="displayAnswerLuas()">Hitung</button>
+                        <p id="err_msg_luas" style="display:none">Sisi harus diisi dengan angka</p>
+                    </div>
+                    <p id = "formula-luas" style = "display:none">L = s x s</p>
+                    <p id = "inputValueDisplay-luas"></p>
+                    <p id = "result-luas"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h3>Squator</h1>
+        <p>Matematika Membangun Dunia</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
